@@ -13,7 +13,7 @@
    "registry": "https://npm.pkg.github.com/@Budhabhushan"
   },
   "scripts": {
-    "test": "vitest run && echo \"Error: no test specified\" && exit 1",
+    "test": "vitest run",
     "build": "tsc && vite build",
     "test-watch": "vitest",
     "test:ui": "vitest --ui",
