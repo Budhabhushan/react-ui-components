@@ -1,5 +1,5 @@
 {
-  "name": "ui-components-for-react",
+  "name": "@Budhabhushan/ui-components-for-react",
   "version": "0.0.4",
   "description": "",
   "type": "module",
@@ -26,6 +26,9 @@
       "npm run lint",
       "npm run test"
     ]
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@Budhabhushan"
   },
   "keywords": [],
   "author": "",
