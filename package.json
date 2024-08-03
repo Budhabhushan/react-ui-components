@@ -1,6 +1,6 @@
 {
-  "name": "@Budhabhushan/react-ui-components",
-  "version": "1.0.0",
+  "name": "@Budhabhushan/ui-components-for-react",
+  "version": "0.0.3",
   "description": "",
   "type": "module",
   "main": "dist/index.cjs.js",
@@ -21,7 +21,7 @@
     "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepare": "husky install"
+    "prepare": "npm run build && husky install"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
