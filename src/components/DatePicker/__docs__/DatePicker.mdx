@@ -1,0 +1,28 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import DatePicker from "./Example";
+
+<Meta title="Components/DatePicker" component={DatePicker} />
+
+# DatePicker
+
+A customizable date picker component.
+
+## Usage
+
+<Preview>
+  <Story name="Default">
+    <DatePicker placeholder="Select a date" />
+  </Story>
+</Preview>
+
+## With Min and Max Dates
+
+<Preview>
+  <Story name="WithMinMaxDates">
+    <DatePicker placeholder="Select a date" minDate="2023-01-01" maxDate="2023-12-31" />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={DatePicker} />
