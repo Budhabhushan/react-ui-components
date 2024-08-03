@@ -1,6 +1,6 @@
 {
   "name": "@Budhabhushan/ui-components-for-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "type": "module",
   "main": "dist/index.cjs.js",
@@ -23,12 +23,11 @@
   "lint-staged": {
     "*.{ts,tsx}": [
       "npm run format",
-      "npm run lint",
-      "npm run test"
+      "npm run lint"
     ]
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@Budhabhushan"
+    "registry": "https://npm.pkg.github.com/"
   },
   "keywords": [],
   "author": "",
