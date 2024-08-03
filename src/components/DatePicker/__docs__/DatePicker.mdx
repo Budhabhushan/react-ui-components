@@ -2,28 +2,44 @@ import { Canvas, Meta } from "@storybook/blocks";
 import Example from "./Example.tsx";
 import * as DatePicker from "./DatePicker.stories.tsx";
 
-<Meta title="DatePicker" component={DatePicker} />
+<Meta of={DatePicker} title="DatePicker" />
 
 # DatePicker
 
-A customizable date picker component.
+DatePicker component with different props.
+
+#### Example
+
+<Canvas of={DatePicker.Default} />
 
 ## Usage
 
-<Preview>
-  <Story name="Default">
-    <DatePicker placeholder="Select a date" />
-  </Story>
-</Preview>
+```ts
+import DatePicker from "./DatePicker";
 
-## With Min and Max Dates
+const Example = () => {
+  const handleDateChange = (date: string) => {
+    console.log("Selected date:", date);
+  };
 
-<Preview>
-  <Story name="WithMinMaxDates">
-    <DatePicker placeholder="Select a date" minDate="2023-01-01" maxDate="2023-12-31" />
-  </Story>
-</Preview>
+  return (
+    <DatePicker
+      placeholder={"Select a date"}
+      value={""}
+      onChange={handleDateChange}
+      minDate={"2023-01-01"}
+      maxDate={"2023-12-31"}
+    />
+  );
+};
 
-## Props
+export default Example;
+```
 
-<Props of={DatePicker} />
+#### Arguments
+
+- **placeholder** string - A string that represents the placeholder text of the input field.
+- **value** string - A string representing the current value of the date picker. It should be in the format "YYYY-MM-DD".
+- **onChange** (date: string) => void - A function that is called when the date is changed. It receives a string representing the selected date.
+- **minDate** string - A string representing the minimum selectable date in the format "YYYY-MM-DD".
+- **maxDate** string - A string representing the maximum selectable date in the format "YYYY-MM-DD".
